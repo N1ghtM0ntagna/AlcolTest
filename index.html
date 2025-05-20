@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Stima Tasso Alcolemico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Stima del Tasso Alcolemico</h1>
+
+  <form>
+    <label for="gender">Genere:</label>
+    <select id="gender">
+      <option value="male">Uomo</option>
+      <option value="female">Donna</option>
+    </select>
+
+    <label for="weight">Peso (kg):</label>
+    <input type="number" id="weight" min="0" value="0">
+
+    <label for="time">Tempo dal consumo (min):</label>
+    <input type="number" id="time" min="0" value="0">
+
+    <label for="stomach">Stato dello stomaco:</label>
+    <select id="stomach">
+      <option value="full">Pieno</option>
+      <option value="empty">Vuoto</option>
+    </select>
+
+    <div class="beverage-group">
+      <p><strong>Indica quante unità hai assunto per ciascuna bevanda:</strong></p>
+
+      <div class="beverage">
+        <label>Birra analcolica (0.5% - 330ml)</label>
+        <input type="number" min="0" value="0">
+      </div>
+
+      <div class="beverage">
+        <label>Birra leggera (3,5% - 330ml)</label>
+        <input type="number" min="0" value="0">
+      </div>
+
+      <div class="beverage">
+        <label>Birra normale (5% - 330ml)</label>
+        <input type="number" min="0" value="0">
+      </div>
+
+      <div class="beverage">
+        <label>Vino (12% - 125ml)</label>
+        <input type="number" min="0" value="0">
+      </div>
+
+      <div class="beverage">
+        <label>Aperitivo/Vino liquoroso (18% - 70ml)</label>
+        <input type="number" min="0" value="0">
+      </div>
+
+      <div class="beverage">
+        <label>Superalcolici (35% - 40ml)</label>
+        <input type="number" min="0" value="0">
+      </div>
+
+      <div class="beverage">
+        <label>Superalcolici forti (60% - 40ml)</label>
+        <input type="number" min="0" value="0">
+      </div>
+
+      <div class="beverage">
+        <label>Champagne/spumante (11% - 100ml)</label>
+        <input type="number" min="0" value="0">
+      </div>
+    </div>
+
+    <button type="submit">Calcola Alcolemia Stimata</button>
+
+    <div class="result" id="result">
+    </div>
+    <div class="result" id="drivingstatus">
+    </div>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
